@@ -62,6 +62,7 @@ const filterButtons = async () => {
 };
 
 const filterByType = async (type) => {
+  
   if (filters.includes(type)) {
     // if the type is already in the filters array, remove it
     filters = filters.filter((filter) => filter !== type);
