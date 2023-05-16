@@ -49,9 +49,7 @@ const paginate = async (currentPage, PAGE_SIZE, pokemons) => {
 };
 
 const filterButtons = async () => {
-  $('#filters').append(`
-    <input type="button" value="clear filters" onclick="window.location.reload()">
-  `);
+ 
 
   const type = await axios.get('https://pokeapi.co/api/v2/type');
 
